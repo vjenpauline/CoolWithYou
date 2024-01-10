@@ -435,9 +435,11 @@ footer {
                 color: $my-white;
                 font-family: "Gioviale";
                 font-size: 150px;
-                line-height: 170px;
                 margin-left: 110px;
                 max-width: 580px;
+                display: inline-block;
+                line-height: 160px;
+                overflow: hidden;
             }
 
             .sites-container {
@@ -469,6 +471,7 @@ footer {
         font-size: 150px;
         line-height: 150px;
         text-align: right;
+        overflow: hidden;
 
         @include center-absolute();
     }
@@ -541,6 +544,8 @@ footer {
         font-family: "Gioviale";
         font-size: 150px;
         margin-top: 200px;
+        line-height: 150px;
+        overflow: hidden;
 
         @include to-center;
     }

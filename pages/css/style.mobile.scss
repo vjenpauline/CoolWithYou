@@ -441,6 +441,9 @@ footer {
                 line-height: 16.221vw;
                 margin-left: 10.496vw;
                 max-width: 55.344vw;
+                display: inline-block;
+                line-height: 16.221vw;
+                overflow: hidden;
             }
 
             .sites-container {
@@ -472,6 +475,7 @@ footer {
         font-size: 14.313vw;
         line-height: 14.313vw;
         text-align: right;
+        overflow: hidden;
 
         @include center-absolute();
     }
@@ -544,6 +548,8 @@ footer {
         font-family: "Gioviale";
         font-size: 14.313vw;
         margin-top: 19.084vw;
+        line-height: 14.313vw;
+        overflow: hidden;
 
         @include to-center;
     }

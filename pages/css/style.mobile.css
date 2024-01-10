@@ -5,17 +5,18 @@
 /* Mixin that applies absolute and centers items with position left */
 /* General settings to apply to whole page */
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
-  box-sizing: border-box;
-  text-decoration: none; /* Removes underlines on links */
+  padding: 0;
+  text-decoration: none;
+  /* Removes underlines on links */
 }
 
 body {
-  font-family: "Beausite", sans-serif;
   background-color: #141010;
   color: #ddd3d1;
+  font-family: "Beausite", sans-serif;
 }
 
 /* === Header */
@@ -26,44 +27,44 @@ body {
 }
 
 .ador-logo {
-  margin-top: 4.294vw;
   height: 4.58vw;
+  margin-top: 4.294vw;
 }
 
-nav {
-  transform: rotate(-90deg);
+nav { /* Navigation Bar */
+  transform: rotate(-90deg); /* Rotates content */
 }
 nav li {
   font-size: 1.527vw;
-  text-align: right;
+  letter-spacing: 0.477vw;
   list-style-type: none;
   margin-bottom: 1.431vw;
-  letter-spacing: 0.477vw;
+  text-align: right;
 }
 nav a {
   color: #ddd3d1;
 }
 
-li.active {
+li.active { /* Adds a rectangle around word when clicked */
   border: 0.191vw solid #ddd3d1;
-  padding: 0.954vw;
   margin-bottom: 1.431vw;
+  padding: 0.954vw;
 }
 li.active a:hover {
   color: white;
 }
 
-a:hover {
+a:hover { /* Changes color to purple to highlight text when hovered */
   color: #744874;
 }
 
 /* === Title */
 .song-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4.771vw;
   margin-bottom: 5.725vw;
+  margin-top: 4.771vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .song-title .title-logo {
   width: 58.874vw;
@@ -72,8 +73,6 @@ a:hover {
 /* === Footer */
 footer {
   box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
-  -webkit-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
-  -moz-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
 }
 
 .card-container {
@@ -85,15 +84,15 @@ footer {
   color: #744874;
 }
 .card-container .footer-header {
-  font-size: 2.863vw;
   font-family: "Beausite", sans-serif;
+  font-size: 2.863vw;
   font-weight: bold;
-  width: 25.286vw;
   margin-bottom: 1.908vw;
+  width: 25.286vw;
 }
 .card-container .footer-text {
-  font-size: 2.385vw;
   font-family: "DM Serif Text", serif;
+  font-size: 2.385vw;
 }
 .card-container .card {
   margin: 0 auto;
@@ -102,30 +101,30 @@ footer {
 .card-container .card.column1 #NJ-name {
   font-family: "Suerte";
 }
-.card-container .card.column1 .connect-socmed {
+.card-container .card.column1 .connect-socmed { /* Wraps icons onto multiple lines, from top to bottom. */
   display: flex;
   flex-wrap: wrap;
   width: 75%;
 }
 .card-container .card.column1 .socmed-logos {
-  width: 4.771vw;
   filter: brightness(0) invert(1);
+  width: 4.771vw;
 }
 .card-container .card.column4 .footer-text {
   color: white;
 }
 
 .footer-copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-top: 1px solid #ddd3d1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .footer-copyright .copyright-text {
-  margin: 1.908vw;
+  color: white;
   font-family: "DM Serif Text", serif;
   font-size: 1.718vw;
-  color: white;
+  margin: 1.908vw;
 }
 
 /* ┌──────────────────┐
@@ -133,83 +132,83 @@ footer {
    └──────────────────┘ */
 /* === Main: Subtitle */
 .subtitle-container .subtitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2.863vw;
   color: white;
+  margin-top: 2.863vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .subtitle-container .subtitle #subtitle-date {
-  position: absolute;
-  margin-right: 31.489vw;
   font-family: "Beausite", sans-serif;
-  letter-spacing: 2.004vw;
   font-size: 2.767vw;
+  letter-spacing: 2.004vw;
+  margin-right: 31.489vw;
+  position: absolute;
 }
 .subtitle-container .subtitle #subtitle-artist {
-  position: absolute;
-  margin-top: 6.679vw;
-  margin-right: 33.397vw;
   font-family: "Suerte";
   font-size: 4.485vw;
+  margin-right: 33.397vw;
+  margin-top: 6.679vw;
+  position: absolute;
 }
 
 /* === Main: Poster Top */
 .poster-top {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-top p {
-  position: absolute;
-  margin-top: 47.71vw;
-  margin-right: 37.214vw;
-  text-align: left;
   font-family: "DM Serif Text", serif;
   font-size: 3.34vw;
+  margin-right: 37.214vw;
+  margin-top: 47.71vw;
+  position: absolute;
+  text-align: left;
 }
 .poster-top #you {
-  line-height: 14.313vw;
   font-size: 13.359vw;
+  line-height: 14.313vw;
 }
-.poster-top #dia1 {
-  position: absolute;
-  width: 7.252vw;
+.poster-top #dia1 { /* Positions the SVG */
   margin-left: 70.611vw;
   margin-top: 28.626vw;
+  position: absolute;
+  width: 7.252vw;
 }
 .poster-top #dia2 {
-  position: absolute;
-  width: 3.912vw;
   margin-left: 78.244vw;
   margin-top: 38.168vw;
+  position: absolute;
+  width: 3.912vw;
 }
 
 /* === Main: Poster Sides */
 .sides {
   background-image: url(bg-images/hyein-poster-sides.png);
-  width: 38.168vw;
   height: 62.977vw;
-  position: absolute;
   margin-top: 40vw;
+  position: absolute;
+  right: 95%; /* Positions image far to hide part of the image as an illusion */
+  width: 38.168vw;
   z-index: -1;
-  right: 95%;
 }
 
-.sides:nth-child(2) {
+.sides:nth-child(2) { /* Positions image far to hide part of the image as an illusion */
   left: 95%;
 }
 
 /* === Main: Poster Hyein */
 .poster-hyein {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein img {
   position: absolute;
-  width: 76.336vw;
   top: 66.794vw;
+  width: 76.336vw;
   z-index: 2;
 }
 
@@ -219,90 +218,88 @@ footer {
   flex-direction: column;
 }
 .poster-hyein-behind .poster-behind-left {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein-behind .poster-behind-left img {
+  margin-right: 33.397vw;
   position: absolute;
   top: 86.355vw;
   width: 28.34vw;
-  margin-right: 33.397vw;
   z-index: 1;
 }
 .poster-hyein-behind .poster-behind-left p {
-  position: absolute;
-  line-height: 17.176vw;
   color: rgba(0, 0, 0, 0.2470588235);
-  margin-top: 128.817vw;
-  margin-right: 23.855vw;
   font-family: "Do Hyeon";
   font-size: 17.176vw;
+  line-height: 17.176vw;
+  margin-right: 23.855vw;
+  margin-top: 128.817vw;
+  position: absolute;
   z-index: 1;
 }
-.poster-hyein-behind .poster-behind-left #rectangle {
-  position: absolute;
-  z-index: 2;
-  margin-top: 222.328vw;
-  margin-right: 33.397vw;
-  width: 28.34vw;
-  height: 3.817vw;
+.poster-hyein-behind .poster-behind-left #rectangle { /* Creates a rectangle for design */
   background: #744874;
+  height: 3.817vw;
+  margin-right: 33.397vw;
+  margin-top: 222.328vw;
+  position: absolute;
+  width: 28.34vw;
+  z-index: 2;
 }
 .poster-hyein-behind .poster-behind-right {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein-behind .stanza {
-  position: absolute;
-  z-index: 0;
+  background-clip: text;
+  color: #141010;
   display: flex;
   flex-direction: column;
-  width: 23.855vw;
-  margin-top: 145.992vw;
-  margin-left: 41.031vw;
-  text-align: right;
   font-size: 3.244vw;
-  margin-bottom: 4.771vw;
+  margin: 145.992vw 0 4.771vw 41.031vw;
+  position: absolute;
+  text-align: right;
+  width: 23.855vw;
+  z-index: 0;
   /** TEXT GRADIENT */
-  color: #141010;
   background-image: -webkit-linear-gradient(10deg, rgba(20, 16, 16, 0.5294117647) 50%, #ddd3d1 90%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .poster-hyein-behind .poster-behind-rec {
-  position: absolute;
+  border: 0.191vw solid #ddd3d1;
+  height: 95.42vw;
   margin-left: 23.855vw;
   margin-top: 138.359vw;
+  position: absolute;
   width: 49.618vw;
-  height: 95.42vw;
-  border: 0.191vw solid #ddd3d1;
   z-index: -1;
 }
 
 /* === Main: Poster Below */
 .poster-below {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
   margin: 119.275vw 23.855vw 0 18.626vw;
+  position: relative;
   width: 70vw;
+  z-index: 2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .poster-below p {
-  text-align: right;
   font-family: "DM Serif Text", serif;
-  margin-bottom: 2.863vw;
-  font-style: italic;
   font-size: 6.679vw;
+  font-style: italic;
   letter-spacing: 0.668vw;
+  margin-bottom: 2.863vw;
+  text-align: right;
 }
 .poster-below #dreaming {
-  font-style: normal;
   font-size: 14.313vw;
+  font-style: normal;
   letter-spacing: 0px;
 }
 
@@ -313,144 +310,156 @@ footer {
 .bottom-desc h1 {
   font-size: 3.435vw;
   font-style: italic;
-  text-align: center;
   margin: 4.771vw auto;
+  text-align: center;
 }
 .bottom-desc p {
   color: white;
-  max-width: 76.336vw;
-  margin: 0 auto;
-  font-size: 3.053vw;
   font-family: "DM Serif Text", serif;
+  font-size: 3.053vw;
+  margin: 0 auto;
+  max-width: 76.336vw;
   text-align: center;
 }
 .bottom-desc svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 9.542vw auto 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* ┌──────────────────┐
        PART 2: SONG
    └──────────────────┘ */
 .streaming-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 28.626vw;
-  height: 95.42vw;
   background-image: url(bg-images/pic2.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: center center;
   filter: blur;
+  height: 95.42vw;
+  margin-bottom: 28.626vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .streaming-container .stream-top {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .streaming-container .stream-top .nj-image {
-  position: relative;
   filter: drop-shadow(2px 11px 4px #ddd3d1);
+  position: relative;
 }
 .streaming-container .stream-top .nj-image img {
-  width: 49.618vw;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   margin-left: 9.542vw;
   transition: all 1s ease;
+  width: 49.618vw;
 }
 .streaming-container .stream-top .nj-image img:hover {
-  width: 59.16vw;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   margin-left: 19.084vw;
   transition: all 1s ease;
+  width: 59.16vw;
 }
 .streaming-container .stream-top .nj-image .title {
-  position: absolute;
+  -webkit-text-fill-color: #ddd3d1;
+  -webkit-text-stroke-color: #141010;
+  -webkit-text-stroke-width: 1.5px;
   bottom: 3.817vw;
-  left: 27.58vw;
-  max-width: 25.763vw;
-  text-align: right;
   color: #141010;
   font-family: "DM Serif Text", serif;
   font-size: 6.679vw;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #141010;
-  -webkit-text-fill-color: #ddd3d1;
+  left: 27.58vw;
+  max-width: 25.763vw;
+  position: absolute;
+  text-align: right;
 }
 .streaming-container .stream-top .sites .stream-header {
-  margin-left: 10.496vw;
-  max-width: 55.344vw;
   color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 14.313vw;
   line-height: 16.221vw;
+  margin-left: 10.496vw;
+  max-width: 55.344vw;
+  display: inline-block;
+  line-height: 16.221vw;
+  overflow: hidden;
 }
 .streaming-container .stream-top .sites .sites-container {
   margin: 0 auto;
   max-width: 50%;
 }
 .streaming-container .stream-top .sites .sites-container .stream-logos {
+  filter: brightness(0) invert(1);
   margin: 0.477vw;
   width: 11.45vw;
-  filter: brightness(0) invert(1);
 }
 
 .line-bg {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   top: 400.763vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 
 .video-analysis {
   position: relative;
 }
 .video-analysis .analysis-header {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  text-align: right;
   color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 14.313vw;
   line-height: 14.313vw;
+  text-align: right;
+  overflow: hidden;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .video-analysis .analysis-bg {
-  margin: 19.084vw auto;
   display: block;
+  margin: 19.084vw auto;
   width: 66.794vw;
 }
 
 .storytelling h1 {
   font-size: 4.771vw;
-  text-align: center;
   margin-bottom: 4.771vw;
+  text-align: center;
 }
 .storytelling .screenshot {
   filter: drop-shadow(1px 1px 7px #ddd3d1);
+  height: 39.122vw;
+  margin-bottom: 9.542vw;
+  overflow: hidden;
   position: relative;
   width: 100%;
-  height: 39.122vw;
-  overflow: hidden;
-  margin-bottom: 9.542vw;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .storytelling .screenshot .screenshot-pic img {
   top: 0;
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
 }
 .storytelling .screenshot .screenshot-text {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  top: 23.855vw;
   max-width: 66.794vw;
   text-shadow: 2px 2px 5px #141010;
+  top: 23.855vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .storytelling .screenshot .screenshot-text h2 {
   color: #744874;
@@ -460,8 +469,8 @@ footer {
 }
 .storytelling .screenshot .screenshot-text p {
   color: white;
-  font-size: 1.908vw;
   font-family: "DM Serif Text", serif;
+  font-size: 1.908vw;
 }
 .storytelling .screenshot .screenshot-text .white {
   color: #ddd3d1;
@@ -474,46 +483,48 @@ footer {
   /* Container of members */
 }
 .artist .artist-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 14.313vw;
   margin-top: 19.084vw;
+  line-height: 14.313vw;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .artist .perf-video {
   /* Centers the embed */
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .artist .artist-name1 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-family: "Suerte Outline";
   font-size: 9.542vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .artist .artist-name2 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-family: "Suerte";
   font-size: 8.588vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
 }
 .artist .NWJNS {
-  margin-top: 14.313vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 14.313vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .artist .NWJNS .members {
-  width: 30.057vw;
+  background-color: #ddd3d1;
   height: 30.057vw;
   margin: 1.908vw;
-  background-color: #ddd3d1;
+  width: 30.057vw;
 }
 .artist .NWJNS .members .mem-pic {
   display: block;
@@ -521,14 +532,15 @@ footer {
   width: 70%;
 }
 .artist .NWJNS .members p {
-  text-align: center;
-  font-family: "DM Serif Text", serif;
   color: #744874;
+  font-family: "DM Serif Text", serif;
   font-size: 3.053vw;
+  text-align: center;
 }
 .artist .NWJNS .members:hover {
-  animation: jelly 0.5s; /* Adds animation */
+  animation: jelly 0.5s;
   filter: brightness(1.2);
+  /* Adds animation */
 }
 
 /* ┌──────────────────┐
@@ -551,12 +563,12 @@ footer {
 }
 /* Class for FADE-IN */
 .scroll {
-  transform: translateY(-30px);
   opacity: 0;
+  transform: translateY(-30px);
   transition: 1s;
 }
 
 .scroll--show {
-  transform: translateY(0px);
   opacity: 1;
+  transform: translateY(0px);
 }/*# sourceMappingURL=style.mobile.css.map */
