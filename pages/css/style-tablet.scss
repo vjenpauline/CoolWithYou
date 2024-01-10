@@ -1,36 +1,44 @@
+/* Variables for website fonts */
 $my-sans: "Beausite", sans-serif;
 $my-serif: "DM Serif Text", serif;
-$my-white: #DDD3D1;
+
+/* Variables for website colors */
+$my-white: #ddd3d1;
 $my-black: #141010;
 $color-accent: #744874;
 
+/* Mixin that applies flex and centers items */
 @mixin to-center {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
+/* Mixin that applies absolute and centers items with position left */
 @mixin center-absolute {
-    position: absolute;
     left: 50%;
+    position: absolute;
     transform: translate(-50%, 0);
 }
 
+/* General settings to apply to whole page */
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
-    box-sizing: border-box;
-    text-decoration: none
+    padding: 0;
+    text-decoration: none;
+
+    /* Removes underlines on links */
 }
 
 body {
-    font-family: $my-sans;
     background-color: $my-black;
     color: $my-white;
+    font-family: $my-sans;
 }
 
-/* Header */
+/* === Header */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -38,19 +46,19 @@ body {
 }
 
 .ador-logo {
+    height: 4.58vw;
     margin-top: 4.294vw;
-    height: 4.580vw;
 }
 
-nav {
-    transform: rotate(-90deg);
+nav { /* Navigation Bar */
+    transform: rotate(-90deg); /* Rotates content */
 
     li {
         font-size: 1.527vw;
-        text-align: right;
+        letter-spacing: 0.477vw;
         list-style-type: none;
         margin-bottom: 1.431vw;
-        letter-spacing: 0.477vw;
+        text-align: right;
     }
 
     a {
@@ -58,36 +66,37 @@ nav {
     }
 }
 
-li.active {
+li.active { /* Adds a rectangle around word when clicked */
     border: 0.191vw solid $my-white;
-    padding: 0.954vw;
     margin-bottom: 1.431vw;
+    padding: 0.954vw;
 
     a:hover {
         color: white;
     }
 }
 
-a:hover {
+a:hover { /* Changes color to purple to highlight text when hovered */
     color: $color-accent;
 }
 
-/* Title */
+/* === Title */
 .song-title {
-    @include to-center();
-    margin-top: 4.771vw;
     margin-bottom: 5.725vw;
+    margin-top: 4.771vw;
+
+    @include to-center();
 
     .title-logo {
         width: 58.874vw;
     }
 }
 
-/* Footer */
+/* === Footer */
 footer {
-    box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
-    -webkit-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
     -moz-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
+    -webkit-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
+    box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
 }
 
 .card-container {
@@ -100,16 +109,16 @@ footer {
     }
 
     .footer-header {
-        font-size: 2.863vw;
         font-family: $my-sans;
+        font-size: 2.863vw;
         font-weight: bold;
-        width: 25.286vw;
         margin-bottom: 1.908vw;
+        width: 25.286vw;
     }
 
     .footer-text {
-        font-size: 2.385vw;
         font-family: $my-serif;
+        font-size: 2.385vw;
     }
 
     .card {
@@ -122,15 +131,15 @@ footer {
             font-family: "Suerte";
         }
 
-        .connect-socmed {
+        .connect-socmed { /* Wraps icons onto multiple lines, from top to bottom. */
             display: flex;
             flex-wrap: wrap;
             width: 75%;
         }
 
         .socmed-logos {
-            width: 4.771vw;
             filter: brightness(0) invert(1);
+            width: 4.771vw;
         }
     }
 
@@ -142,110 +151,108 @@ footer {
 }
 
 .footer-copyright {
-    @include to-center();
-
     border-top: 1px solid $my-white;
 
+    @include to-center();
+
     .copyright-text {
-        margin: 1.908vw;
+        color: white;
         font-family: $my-serif;
         font-size: 1.718vw;
-        color: white;
+        margin: 1.908vw;
     }
 }
 
 /* ┌──────────────────┐
        PART 1: HOME
    └──────────────────┘ */
-
-/* Main: Subtitle */
+/* === Main: Subtitle */
 .subtitle-container {
     .subtitle {
-        @include to-center();
-        margin-top: 2.863vw;
         color: white;
+        margin-top: 2.863vw;
+
+        @include to-center();
 
         #subtitle-date {
-            position: absolute;
-            margin-right: 31.489vw;
             font-family: $my-sans;
-            letter-spacing: 2.004vw;
             font-size: 2.767vw;
+            letter-spacing: 2.004vw;
+            margin-right: 31.489vw;
+            position: absolute;
         }
 
         #subtitle-artist {
-            position: absolute;
-            margin-top: 6.679vw;
-            margin-right: 33.397vw;
             font-family: "Suerte";
             font-size: 4.485vw;
+            margin-right: 33.397vw;
+            margin-top: 6.679vw;
+            position: absolute;
         }
     }
 }
 
-/* Main: Poster Top */
+/* === Main: Poster Top */
 .poster-top {
     @include to-center();
 
     p {
-        position: absolute;
-        margin-top: 47.710vw;
-        margin-right: 37.214vw;
-        text-align: left;
-
         font-family: $my-serif;
-        font-size: 3.340vw;
+        font-size: 3.34vw;
+        margin-right: 37.214vw;
+        margin-top: 47.71vw;
+        position: absolute;
+        text-align: left;
     }
 
     #you {
-        line-height: 14.313vw;
         font-size: 13.359vw;
+        line-height: 14.313vw;
     }
 
-    #dia1 {
-        position: absolute;
-        width: 7.252vw;
+    #dia1 { /* Positions the SVG */
         margin-left: 70.611vw;
         margin-top: 28.626vw;
+        position: absolute;
+        width: 7.252vw;
     }
 
     #dia2 {
-        position: absolute;
-        width: 3.912vw;
         margin-left: 78.244vw;
         margin-top: 38.168vw;
+        position: absolute;
+        width: 3.912vw;
     }
 }
 
-
-/* Main: Poster Sides */
+/* === Main: Poster Sides */
 .sides {
     background-image: url(bg-images/hyein-poster-sides.png);
-    width: 38.168vw;
     height: 62.977vw;
-    position: absolute;
     margin-top: 40vw;
+    position: absolute;
+    right: 95%; /* Positions image far to hide part of the image as an illusion */
+    width: 38.168vw;
     z-index: -1;
-    right: 95%;
 }
 
-.sides:nth-child(2) {
+.sides:nth-child(2) { /* Positions image far to hide part of the image as an illusion */
     left: 95%;
 }
 
-/* Main: Poster Hyein */
+/* === Main: Poster Hyein */
 .poster-hyein {
     @include to-center();
 
     img {
         position: absolute;
-        width: 76.336vw;
         top: 66.794vw;
+        width: 76.336vw;
         z-index: 2;
     }
 }
 
-/* Main: Behind Poster Hyein */
+/* === Main: Behind Poster Hyein */
 .poster-hyein-behind {
     display: flex;
     flex-direction: column;
@@ -254,32 +261,32 @@ footer {
         @include to-center();
 
         img {
+            margin-right: 33.397vw;
             position: absolute;
             top: 86.355vw;
-            width: 28.340vw;
-            margin-right: 33.397vw;
+            width: 28.34vw;
             z-index: 1;
         }
 
         p {
-            position: absolute;
-            line-height: 17.176vw;
             color: #0000003f;
-            margin-top: 128.817vw;
-            margin-right: 23.855vw;
             font-family: "Do Hyeon";
             font-size: 17.176vw;
+            line-height: 17.176vw;
+            margin-right: 23.855vw;
+            margin-top: 128.817vw;
+            position: absolute;
             z-index: 1;
         }
 
-        #rectangle {
-            position: absolute;
-            z-index: 2;
-            margin-top: 222.328vw;
-            margin-right: 33.397vw;
-            width: 28.340vw;
-            height: 3.817vw;
+        #rectangle { /* Creates a rectangle for design */
             background: $color-accent;
+            height: 3.817vw;
+            margin-right: 33.397vw;
+            margin-top: 222.328vw;
+            position: absolute;
+            width: 28.34vw;
+            z-index: 2;
         }
     }
 
@@ -288,155 +295,152 @@ footer {
     }
 
     .stanza {
-        position: absolute;
-        z-index: 0;
+        background-clip: text;
+        color: $my-black;
         display: flex;
         flex-direction: column;
-        width: 23.855vw;
-        margin-top: 145.992vw;
-        margin-left: 41.031vw;
-        text-align: right;
         font-size: 3.244vw;
-        margin-bottom: 4.771vw;
+        margin: 145.992vw 0 4.771vw 41.031vw;
+        position: absolute;
+        text-align: right;
+        width: 23.855vw;
+        z-index: 0;
 
         /** TEXT GRADIENT */
-        color: $my-black;
-        background-image: -webkit-linear-gradient(10deg, #14101087 50%, $my-white 90%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(10deg,
+                #14101087 50%,
+                $my-white 90%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
     }
 
     .poster-behind-rec {
-        position: absolute;
+        border: 0.191vw solid $my-white;
+        height: 95.42vw;
         margin-left: 23.855vw;
         margin-top: 138.359vw;
+        position: absolute;
         width: 49.618vw;
-        height: 95.420vw;
-        border: 0.191vw solid $my-white;
-        z-index: -1
+        z-index: -1;
     }
 }
 
-/* Main: Poster Below */
+/* === Main: Poster Below */
 .poster-below {
-    @include to-center();
-    position: relative;
-    z-index: 2;
     margin: 119.275vw 23.855vw 0 18.626vw;
+    position: relative;
     width: 70vw;
+    z-index: 2;
+
+    @include to-center();
 
     p {
-        text-align: right;
         font-family: $my-serif;
-        margin-bottom: 2.863vw;
-        font-style: italic;
         font-size: 6.679vw;
+        font-style: italic;
         letter-spacing: 0.668vw;
+        margin-bottom: 2.863vw;
+        text-align: right;
     }
 
     #dreaming {
-        font-style: normal;
         font-size: 14.313vw;
+        font-style: normal;
         letter-spacing: 0px;
     }
 }
 
-/* Main: Description */
+/* === Main: Description */
 .bottom-desc {
     margin-bottom: 28.626vw;
 
     h1 {
         font-size: 3.435vw;
         font-style: italic;
-        text-align: center;
         margin: 4.771vw auto;
+        text-align: center;
     }
 
     p {
         color: white;
-        max-width: 76.336vw;
-        margin: 0 auto;
-        font-size: 3.053vw;
         font-family: $my-serif;
+        font-size: 3.053vw;
+        margin: 0 auto;
+        max-width: 76.336vw;
         text-align: center;
     }
 
     svg {
-        @include to-center();
         margin: 9.542vw auto 0;
+
+        @include to-center();
     }
 }
-
-
 
 /* ┌──────────────────┐
        PART 2: SONG
    └──────────────────┘ */
-
 .streaming-container {
-    @include to-center();
-    margin-bottom: 28.626vw;
-    height: 95.420vw;
     background-image: url(bg-images/pic2.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center center;
     filter: blur;
-    
+    height: 95.42vw;
+    margin-bottom: 28.626vw;
+
+    @include to-center();
+
     .stream-top {
         @include to-center();
 
         .nj-image {
-            position: relative;
             filter: drop-shadow(2px 11px 4px $my-white);
+            position: relative;
 
             img {
-                width: 49.618vw;
-                margin-left: 9.542vw;
-
-                -webkit-transition: all 1s ease;
                 -moz-transition: all 1s ease;
-                  -o-transition: all 1s ease;
-                 -ms-transition: all 1s ease;
-                     transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                margin-left: 9.542vw;
+                transition: all 1s ease;
+                width: 49.618vw;
             }
 
             img:hover {
-                width: 59.160vw;
-                margin-left: 19.084vw;
-                
-                -webkit-transition: all 1s ease;
                 -moz-transition: all 1s ease;
-                  -o-transition: all 1s ease;
-                 -ms-transition: all 1s ease;
-                     transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                margin-left: 19.084vw;
+                transition: all 1s ease;
+                width: 59.16vw;
             }
 
             .title {
-                position: absolute;
+                -webkit-text-fill-color: $my-white;
+                -webkit-text-stroke-color: $my-black;
+                -webkit-text-stroke-width: 1.5px;
                 bottom: 3.817vw;
-                left: 29.580vw;
-                max-width: 25.763vw;
-                text-align: right;
                 color: $my-black;
                 font-family: $my-serif;
                 font-size: 6.679vw;
-                -webkit-text-stroke-width: 1.5px;
-                -webkit-text-stroke-color: $my-black;
-                -webkit-text-fill-color: $my-white;
+                left: 29.58vw;
+                max-width: 25.763vw;
+                position: absolute;
+                text-align: right;
             }
         }
 
         .sites {
             .stream-header {
-                margin-left: 10.496vw;
-                max-width: 55.344vw;
                 color: $my-white;
                 font-family: "Gioviale";
                 font-size: 14.313vw;
                 line-height: 16.221vw;
-
+                margin-left: 10.496vw;
+                max-width: 55.344vw;
             }
 
             .sites-container {
@@ -444,9 +448,9 @@ footer {
                 max-width: 50%;
 
                 .stream-logos {
-                    margin: 0.477vw;
-                    width: 11.450vw;
                     filter: brightness(0) invert(1);
+                    margin: 0.477vw;
+                    width: 11.45vw;
                 }
             }
         }
@@ -454,25 +458,27 @@ footer {
 }
 
 .line-bg {
-    @include center-absolute();
     top: 400.763vw;
+
+    @include center-absolute();
 }
 
 .video-analysis {
     position: relative;
 
     .analysis-header {
-        @include center-absolute();
-        text-align: right;
         color: $my-white;
         font-family: "Gioviale";
         font-size: 14.313vw;
         line-height: 14.313vw;
+        text-align: right;
+
+        @include center-absolute();
     }
 
     .analysis-bg {
-        margin: 19.084vw auto;
         display: block;
+        margin: 19.084vw auto;
         width: 66.794vw;
     }
 }
@@ -480,32 +486,34 @@ footer {
 .storytelling {
     h1 {
         font-size: 4.771vw;
-        text-align: center;
         margin-bottom: 4.771vw;
+        text-align: center;
     }
 
-    .parallax {
+    .screenshot {
         filter: drop-shadow(1px 1px 7px $my-white);
+        height: 39.122vw;
+        margin-bottom: 9.542vw;
+        overflow: hidden;
         position: relative;
         width: 100%;
-        height: 39.122vw;
-        overflow: hidden;
-        margin-bottom: 9.542vw;
+
         @include to-center();
 
-        .parallax-pic {
+        .screenshot-pic {
             img {
                 top: 0;
+
                 @include center-absolute;
             }
         }
 
-        .parallax-text {
-            @include center-absolute();
-
-            top: 23.855vw;
+        .screenshot-text {
             max-width: 66.794vw;
             text-shadow: 2px 2px 5px $my-black;
+            top: 23.855vw;
+
+            @include center-absolute();
 
             h2 {
                 color: $color-accent;
@@ -516,8 +524,8 @@ footer {
 
             p {
                 color: white;
-                font-size: 1.908vw;
                 font-family: $my-serif;
+                font-size: 1.908vw;
             }
 
             .white {
@@ -527,28 +535,17 @@ footer {
     }
 }
 
-
-.scroll {
-   transform: translateY(-30px);
-  opacity: 0;
-  transition: 1s;
-}
-.scroll--show {
-  transform: translateY(0px);
-  opacity: 1;
-}
-
 /* ┌──────────────────┐
        PART 3: ARTIST
    └──────────────────┘ */
-
 .artist {
     .artist-header {
-        @include to-center;
         color: $my-white;
         font-family: "Gioviale";
         font-size: 14.313vw;
         margin-top: 19.084vw;
+
+        @include to-center;
     }
 
     .perf-video {
@@ -556,28 +553,31 @@ footer {
     }
 
     .artist-name1 {
-        @include center-absolute();
         font-family: "Suerte Outline";
         font-size: 9.542vw;
+
+        @include center-absolute();
     }
 
     .artist-name2 {
-        @include center-absolute();
         font-family: "Suerte";
         font-size: 8.588vw;
+
+        @include center-absolute();
     }
 
+    /* Container of members */
     .NWJNS {
-        margin-top: 14.313vw;
-        @include to-center;
         flex-wrap: wrap;
+        margin-top: 14.313vw;
 
+        @include to-center;
 
         .members {
-            width: 30.057vw;
+            background-color: $my-white;
             height: 30.057vw;
             margin: 1.908vw;
-            background-color: $my-white;
+            width: 30.057vw;
 
             .mem-pic {
                 display: block;
@@ -586,35 +586,54 @@ footer {
             }
 
             p {
-                text-align: center;
-                font-family: $my-serif;
                 color: $color-accent;
+                font-family: $my-serif;
                 font-size: 3.053vw;
+                text-align: center;
             }
         }
 
         .members:hover {
             animation: jelly 0.5s;
             filter: brightness(1.2);
+
+            /* Adds animation */
         }
     }
 }
 
-/* Animation */
-
+/* ┌──────────────────┐
+        ANIMATION
+   └──────────────────┘ */
 /* JELLY BOUNCE */
 @keyframes jelly {
+
     0%,
     100% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     25% {
-      transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
     }
+
     50% {
-      transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
     }
+
     75% {
-      transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
     }
-  }
+}
+
+/* Class for FADE-IN */
+.scroll {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+.scroll--show {
+    opacity: 1;
+    transform: translateY(0px);
+}

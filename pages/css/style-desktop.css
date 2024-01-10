@@ -1,19 +1,24 @@
 @charset "UTF-8";
+/* Variables for website fonts */
+/* Variables for website colors */
+/* Mixin that applies flex and centers items */
+/* Mixin that applies absolute and centers items with position left */
+/* General settings to apply to whole page */
 * {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none; /* Removes underlines on links */
 }
 
 body {
   font-family: "Beausite", sans-serif;
   background-color: #141010;
-  color: #DDD3D1;
+  color: #ddd3d1;
 }
 
-/* Header */
+/* === Header */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -37,11 +42,11 @@ nav li {
   letter-spacing: 5px;
 }
 nav a {
-  color: #DDD3D1;
+  color: #ddd3d1;
 }
 
 li.active {
-  border: 2px solid #DDD3D1;
+  border: 2px solid #ddd3d1;
   padding: 10px;
   margin-bottom: 15px;
 }
@@ -53,10 +58,10 @@ a:hover {
   color: #744874;
 }
 
-/* Title */
+/* === Title */
 .song-title {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 60px;
@@ -65,7 +70,7 @@ a:hover {
   width: 617px;
 }
 
-/* Footer */
+/* === Footer */
 footer {
   box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
   -webkit-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
@@ -112,10 +117,10 @@ footer {
 }
 
 .footer-copyright {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  border-top: 1px solid #DDD3D1;
+  border-top: 1px solid #ddd3d1;
 }
 .footer-copyright .copyright-text {
   margin: 20px;
@@ -127,10 +132,10 @@ footer {
 /* ┌──────────────────┐
        PART 1: HOME
    └──────────────────┘ */
-/* Main: Subtitle */
+/* === Main: Subtitle */
 .subtitle-container .subtitle {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-top: 30px;
   color: white;
@@ -150,10 +155,10 @@ footer {
   font-size: 47px;
 }
 
-/* Main: Poster Top */
+/* === Main: Poster Top */
 .poster-top {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-top p {
@@ -179,7 +184,7 @@ footer {
   margin-top: 400px;
 }
 
-/* Main: Poster Sides */
+/* === Main: Poster Sides */
 .sides {
   background-image: url(bg-images/hyein-poster-sides.png);
   width: 400px;
@@ -194,10 +199,10 @@ footer {
   left: 95%;
 }
 
-/* Main: Poster Hyein */
+/* === Main: Poster Hyein */
 .poster-hyein {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein img {
@@ -207,14 +212,14 @@ footer {
   z-index: 2;
 }
 
-/* Main: Behind Poster Hyein */
+/* === Main: Behind Poster Hyein */
 .poster-hyein-behind {
   display: flex;
   flex-direction: column;
 }
 .poster-hyein-behind .poster-behind-left {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein-behind .poster-behind-left img {
@@ -243,8 +248,8 @@ footer {
   background: #744874;
 }
 .poster-hyein-behind .poster-behind-right {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .poster-hyein-behind .stanza {
@@ -260,7 +265,7 @@ footer {
   margin-bottom: 50px;
   /** TEXT GRADIENT */
   color: #141010;
-  background-image: -webkit-linear-gradient(10deg, rgba(20, 16, 16, 0.5294117647) 50%, #DDD3D1 90%);
+  background-image: -webkit-linear-gradient(10deg, rgba(20, 16, 16, 0.5294117647) 50%, #ddd3d1 90%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -271,14 +276,14 @@ footer {
   margin-top: 1450px;
   width: 520px;
   height: 1000px;
-  border: 2px solid #DDD3D1;
+  border: 2px solid #ddd3d1;
   z-index: -1;
 }
 
-/* Main: Poster Below */
+/* === Main: Poster Below */
 .poster-below {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   position: relative;
   z-index: 2;
@@ -298,7 +303,7 @@ footer {
   letter-spacing: 0px;
 }
 
-/* Main: Description */
+/* === Main: Description */
 .bottom-desc {
   margin-bottom: 300px;
 }
@@ -317,8 +322,8 @@ footer {
   text-align: center;
 }
 .bottom-desc svg {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin: 100px auto 0;
 }
@@ -327,8 +332,8 @@ footer {
        PART 2: SONG
    └──────────────────┘ */
 .streaming-container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-bottom: 300px;
   height: 1000px;
@@ -339,13 +344,13 @@ footer {
   filter: blur;
 }
 .streaming-container .stream-top {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .streaming-container .stream-top .nj-image {
   position: relative;
-  filter: drop-shadow(2px 11px 4px #DDD3D1);
+  filter: drop-shadow(2px 11px 4px #ddd3d1);
 }
 .streaming-container .stream-top .nj-image img {
   width: 520px;
@@ -368,12 +373,12 @@ footer {
   font-size: 70px;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #141010;
-  -webkit-text-fill-color: #DDD3D1;
+  -webkit-text-fill-color: #ddd3d1;
 }
 .streaming-container .stream-top .sites .stream-header {
   margin-left: 110px;
   max-width: 580px;
-  color: #DDD3D1;
+  color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 150px;
   line-height: 170px;
@@ -389,8 +394,8 @@ footer {
 }
 
 .line-bg {
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   top: 4200px;
 }
@@ -399,11 +404,11 @@ footer {
   position: relative;
 }
 .video-analysis .analysis-header {
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   text-align: right;
-  color: #DDD3D1;
+  color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 150px;
   line-height: 150px;
@@ -419,92 +424,84 @@ footer {
   text-align: center;
   margin-bottom: 50px;
 }
-.storytelling .parallax {
-  filter: drop-shadow(1px 1px 7px #DDD3D1);
+.storytelling .screenshot {
+  filter: drop-shadow(1px 1px 7px #ddd3d1);
   position: relative;
   width: 100%;
   height: 410px;
   overflow: hidden;
   margin-bottom: 100px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
-.storytelling .parallax .parallax-pic img {
+.storytelling .screenshot .screenshot-pic img {
   top: 0;
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
 }
-.storytelling .parallax .parallax-text {
-  position: absolute;
+.storytelling .screenshot .screenshot-text {
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   top: 250px;
   max-width: 700px;
   text-shadow: 2px 2px 5px #141010;
 }
-.storytelling .parallax .parallax-text h2 {
+.storytelling .screenshot .screenshot-text h2 {
   color: #744874;
   font-family: "Beausite", sans-serif;
   font-size: 30px;
   font-style: italic;
 }
-.storytelling .parallax .parallax-text p {
+.storytelling .screenshot .screenshot-text p {
   color: white;
   font-size: 20px;
   font-family: "DM Serif Text", serif;
 }
-.storytelling .parallax .parallax-text .white {
-  color: #DDD3D1;
-}
-
-.scroll {
-  transform: translateY(-30px);
-  opacity: 0;
-  transition: 1s;
-}
-
-.scroll--show {
-  transform: translateY(0px);
-  opacity: 1;
+.storytelling .screenshot .screenshot-text .white {
+  color: #ddd3d1;
 }
 
 /* ┌──────────────────┐
        PART 3: ARTIST
    └──────────────────┘ */
+.artist {
+  /* Container of members */
+}
 .artist .artist-header {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  color: #DDD3D1;
+  color: #ddd3d1;
   font-family: "Gioviale";
   font-size: 150px;
   margin-top: 200px;
 }
 .artist .perf-video {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .artist .artist-name1 {
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   font-family: "Suerte Outline";
   font-size: 100px;
 }
 .artist .artist-name2 {
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, 0);
   font-family: "Suerte";
   font-size: 90px;
 }
 .artist .NWJNS {
   margin-top: 150px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -512,7 +509,7 @@ footer {
   width: 315px;
   height: 315px;
   margin: 20px;
-  background-color: #DDD3D1;
+  background-color: #ddd3d1;
 }
 .artist .NWJNS .members .mem-pic {
   display: block;
@@ -526,11 +523,14 @@ footer {
   font-size: 32px;
 }
 .artist .NWJNS .members:hover {
+  /* Adds animation */
   animation: jelly 0.5s;
   filter: brightness(1.2);
 }
 
-/* Animation */
+/* ┌──────────────────┐
+        ANIMATION
+   └──────────────────┘ */
 /* JELLY BOUNCE */
 @keyframes jelly {
   0%, 100% {
@@ -545,4 +545,15 @@ footer {
   75% {
     transform: scale(0.95, 1.05);
   }
+}
+/* Class for FADE-IN */
+.scroll {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.scroll--show {
+  transform: translateY(0px);
+  opacity: 1;
 }/*# sourceMappingURL=style-desktop.css.map */

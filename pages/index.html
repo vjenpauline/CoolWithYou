@@ -10,22 +10,29 @@
 
     <link rel="icon" href="images/bunny.png" type="image/x-icon">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
+
+    <!-- Stylesheet for different device resolutions -->
     <link rel="stylesheet" href="css/style-desktop.css" media="only screen and (min-device-width: 1025px)"
         type="text/css">
     <link rel="stylesheet" href="css/style-tablet.css" media="only screen and (max-device-width: 1024px)"
         type="text/css">
     <link rel="stylesheet" href="css/style-mobile.css" media="only screen and (max-device-width: 480px)"
         type="text/css">
+
+    <!-- Animation Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="header-container">
+            <!-- Logo -->
             <img class="ador-logo" src="images/Ador_Logo.png" alt="Ador Logo">
 
+            <!-- Navigation Menu -->
             <nav>
                 <ul class="desktop-menu-bar">
                     <li class="active"> <a href="#"> HOME </a> </li>
@@ -36,23 +43,26 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
         <div class="song-title">
             <img data-aos="fade-down" data-aos-duration=500 src="images/Cool With You logo.png" class="title-logo" alt="Cool With You">
         </div>
-
+        
+        <!-- Subtitle container -->
         <section class="subtitle-container">
+            <!-- Subtitle to show date of song release and artist name -->
             <div class="subtitle">
                 <p class="scroll" id="subtitle-date"> 19/7/2023 </p>
                 <p class="scroll" id="subtitle-artist"> NewJeans </p>
             </div>
         </section>
 
+        <!-- Poster visual container -->
         <section class="poster-container">
             <div class="poster-sides"> </div>
 
             <div class="poster-full">
-
                 <div class="poster-top">
                     <p data-aos="fade-up-right" data-aos-duration=5000 > <span id="you"> YOU </span> <br> know me like <br> no other. </p>
 
@@ -73,15 +83,18 @@
                     </div>
                 </div>
 
+                <!-- Background images for design on the side-->
                 <div class="poster-sides">
                     <div class="poster-hyein">
                         <img src="images/hyein-poster.png" alt="Hyein Big">
                     </div>
 
+                    <!-- Side designs -->
                     <div class="sides left"> </div>
                     <div class="sides right"> </div>
                 </div>
 
+                <!-- Background images for design behind the middle -->
                 <div class="poster-hyein-behind">
                     <div class="poster-behind-left">
                         <img data-aos="fade-up-right" data-aos-delay=5000 data-aos-duration=1000 src="images/hyein-poster-bg.png" alt="Fancy Background">
@@ -89,7 +102,8 @@
                         <div id="rectangle"> </div>
                     </div>
 
-                    <div class="poster-behind-right"> <!-- lyrics -->
+                    <!-- Song lyrics container -->
+                    <div class="poster-behind-right"> 
                         <div data-aos="fade-left" data-aos-delay=6000 class="stanza">
                             <p> 다 표현하지 않아도 </p>
                             <p> See me like no other </p> <br>
@@ -109,6 +123,7 @@
                     </div>
                 </div>
 
+                <!-- Text below poster -->
                 <div class="poster-below">
                     <p data-aos="zoom-out-down"> <span id="dreaming"> DREAMING </span> <br> OF <br> EACH OTHER </p>
                 </div>
@@ -116,6 +131,7 @@
             </div>
         </section>
 
+        <!-- Description container -->
         <section data-aos="zoom-in" class="bottom-desc">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="49" viewBox="0 0 38 49" fill="none">
                 <path
@@ -123,7 +139,7 @@
                     fill="#D9D9D9" />
             </svg>
 
-            <h1> COOL WITH YOU </h1>
+            <h1> COOL WITH YOU </h1> <!-- Name of the song promoted -->
             <p> ‘Cool With You’ is the fourth track of K-pop girl group NewJeans' 2nd EP
                 ‘Get Up’. It features a UK Garage rhythm commonly seen in the 90's pop scene. </p>
         </section>
@@ -132,12 +148,14 @@
             <div class="stream-top">
                 <div data-aos="fade-right" class="nj-image">
                     <img src="images/pic1.jpg" alt="Picture of NewJeans">
-                    <div class="title"> cool with you </div>
+                    <div class="title"> cool with you </div> <!-- Title of name to in front of the image -->
                 </div>
 
+                <!-- Container of whole section -->
                 <div data-aos="fade-left" class="sites">
                     <div class="stream-header"> Stream Here </div>
-                    <div class="sites-container">
+                    <div class="sites-container"> <!-- Container of images -->
+                        <!--  When clicked, directs to page where one may listen to their music -->
                         <a href="https://www.deezer.com/en/artist/178008437"> <img src="images/stream-logos/deezer.png" class="stream-logos" alt="Deezer"> </a>
                         <a href="https://music.apple.com/us/artist/newjeans/1635469693"> <img src="images/stream-logos/itunes.png" class="stream-logos" alt="Itunes"> </a>
                         <a href="https://www.youtube.com/c/NewJeans_official"> <img src="images/stream-logos/play.png" class="stream-logos" alt="YouTube Music"> </a>
@@ -157,122 +175,130 @@
         <img src="images/groupbg.png" class="line-bg" alt="Line Design"> 
 
         <section class="storytelling">
+            <!-- Title -->
             <h1 data-aos="fade-down-right" data-aos-duration="5000"> EROS AND PSYCHE </h1>
 
-			<div data-aos="flip-left" id="first" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/first.png" class="bg" alt="Parallax 1">
+            <!-- Container of whole storytelling section -->
+			<div data-aos="flip-left" id="first" class="screenshot">
+                <!-- Displays screenshot from the music video -->
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/first.png" class="bg" alt="screenshot 1">
                 </div>
                 
-                <div class="parallax-text"> 
+                <!-- Places text on image -->
+                <div class="screenshot-text"> 
                     <h2> Derived from </h2>
                     <p> the Greek tale of Eros and Psyche, Hoyeon embodies 
                         Eros, a God that brings couples together. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-right" id="second" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/second.png" class="bg" alt="Parallax 2">
+            <div data-aos="flip-right" id="second" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/second.png" class="bg" alt="screenshot 2">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2 class="white"> When she develops </h2>
                     <p> feelings for one of her targets, the presumed Psyche, she confronts the harsh truth that their union is impossible—he cannot perceive her existence. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-left" id="third" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/third.png" class="bg" alt="Parallax 3">
+            <div data-aos="flip-left" id="third" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/third.png" class="bg" alt="screenshot 3">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2> NewJeans stands </h2>
                     <p> as the chorus, singing of Hoyeon’s unrequited love and longing for the forbidden. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-right" id="fourth" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/fourth.png" class="bg" alt="Parallax 4">
+            <div data-aos="flip-right" id="fourth" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/fourth.png" class="bg" alt="screenshot 4">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2 class="white"> "I don’t care what other people say.” </h1>
                     <p> The lyrics hints at a desire to pursue the relationship despite societal judgment. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-left" id="fifth" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/fifth.png" class="bg" alt="Parallax 5">
+            <div data-aos="flip-left" id="fifth" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/fifth.png" class="bg" alt="screenshot 5">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2> Yearning to relinquish </h2>
                     <p> her divine duties and embrace humanity to be with her beloved, Hoyeon undergoes a transformation, shedding her black, somber attire for something light and floral. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-right" id="sixth" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/sixth.png" class="bg" alt="Parallax 6">
+            <div data-aos="flip-right" id="sixth" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/sixth.png" class="bg" alt="screenshot 6">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2 class="white"> This metamorphosis </h2>
                     <p> symbolizes her emergence from darkness, a rejection of her nature as a God to become ephemeral. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-left" id="seventh" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/seventh.png" class="bg" alt="Parallax 7">
+            <div data-aos="flip-left" id="seventh" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/seventh.png" class="bg" alt="screenshot 7">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2> However, </h>
                     <p> her joy is short-lived as Tony Leung's character (Aphrodite) intervenes, mirroring the original tale, and causing a rift between them. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-right" id="eighth" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/eighth.png" class="bg" alt="Parallax 8">
+            <div data-aos="flip-right" id="eighth" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/eighth.png" class="bg" alt="screenshot 8">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2 class="white"> Erasing her lover's memories </h2>
                     <p> of their time together, he transforms the Psyche's focus from Hoyeon to forgetting her entirely. </p>
                 </div>
             </div>
 
-            <div data-aos="flip-up" id="ninth" class="parallax"> 
-                <div class="parallax-pic"> 
-                    <img src="images/parallax/ninth.png" class="bg" alt="Parallax 9">
+            <div data-aos="flip-up" id="ninth" class="screenshot"> 
+                <div class="screenshot-pic"> 
+                    <img src="images/screenshot/ninth.png" class="bg" alt="screenshot 9">
                 </div>
                 
-                <div class="parallax-text"> 
+                <div class="screenshot-text"> 
                     <h2> Resigned to her fate, </h2>
                     <p> Hoyeon reverts to her role as an observer rather than a participant in love, concluding her journey in the catacombs. </p>
                 </div>
             </div>
 		</section>
 
+        <!-- Container of whole artist section -->
         <section  data-aos="fade-down-right" class="artist" id="artist">
             <p class="artist-header"> Artist </p>
 
+            <!-- Embed's YouTube image of the music video -->
             <div data-aos="zoom-in-down" class="perf-video"> <iframe referrerpolicy="no-referrer-when-downgrade" width="870" height="489" src="https://www.youtube.com/embed/kKsivrgoyDw?si=RW2GGBaJmZjJ4rxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
-            <p class="artist-name1"> NewJeans </p>
-            <p class="artist-name2"> NewJeans </p>
+            <p class="artist-name1"> NewJeans </p> <!-- Outlined text -->
+            <p class="artist-name2"> NewJeans </p> 
             
+            <!-- Container to display the members of the group -->
             <div data-aos="fade-down" class="NWJNS"> 
                 <div class="members" id="Hyein">
+                    <!-- Adds image in the middle of the square and when clicked, directs to page with member information -->
                     <a href="https://kprofiles.com/hyein-newjeans-profile/"> <img src="images/member-images/hyein.jpg" class="mem-pic" alt="Hyein"> 
-                    <p> Hyein </p> </a> 
+                    <p> Hyein </p> </a> <!-- Puts text below the image -->
                 </div>
 
                 <div class="members" id="Haerin"> 
@@ -297,27 +323,32 @@
             </div>
         </section>
 
+        <!-- Container of description -->
         <section data-aos="zoom-in" class="bottom-desc">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="49" viewBox="0 0 38 49" fill="none">
                 <path
                     d="M18.6822 0.105469L25.6747 15.3608L37.3405 24.5049L25.6747 33.6489L18.6822 48.9043L11.6896 33.6489L0.0238037 24.5049L11.6896 15.3608L18.6822 0.105469Z"
                     fill="#D9D9D9" />
             </svg>
-
-            <h1> NEWJEANS </h1>
+            
+            <h1> NEWJEANS </h1> <!-- Short explanation of the group -->
             <p> NewJeans (뉴진스) is a 5-member girl group under ADOR and HYBE Labels. 
                 The members consist of Minji, Hanni, Danielle, Haerin, and Hyein. They released their debut single “Attention” on July 22, 2022, followed by their debut extended play, New Jeans, which was released on August 1, 2022.</p>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer class="scroll">
         <div class="footer-card">
+            <!-- Card container for flex wrap -->
             <div class="card-container">
+                <!-- Column 1 -->
                 <div class="card column1">
                     <p class="footer-header"> Connect with <span id="NJ-name"> NewJeans </span> </p>
 
                     <div class="connect-socmed">
+                        <!-- When clicked, directs the user to social media platform of the group -->
                         <a href="https://twitter.com/NewJeans_ADOR"> <img src="images/socmed_logos/twitter.png" class="socmed-logos" alt="Twitter">
                         </a>
                         <a href="https://www.facebook.com/official.newjeans/"> <img src="images/socmed_logos/facebook.png" class="socmed-logos" alt="Facebook">
@@ -333,12 +364,16 @@
                     </div>
                 </div>
 
+                <!-- Column 2 -->
                 <div class="card column2">
                     <p class="footer-header"> Contact Ador </p>
 
                     <div class="footer-text">
+                        <!-- When clicked, redirects user to 'call' number -->
                         <a href="tel:+9715555555"> +971 555 5555 </a> <br>
+                        <!-- When clicked, redirects user to email -->
                         <a href="mailto:ador@gmail.com"> ador@gmail.com </a>
+                        <!-- Shows location -->
                         <a href="#" style="color: #b157b3;"> <br>
                             42 Hangang-daero <br>
                             Seoul, 04389 <br>
@@ -346,13 +381,16 @@
                     </div>
                 </div>
 
+                <!-- Column 3 -->
                 <div class="card column3">
                     <p class="footer-header"> Link to Merchandise </p>
+                    <!-- When clicked, redirects user to merchandise website -->
                     <div class="footer-text">
                         <a href="https://shop.newjeans-official.us/"> NewJeans Shop </a>
                     </div>
                 </div>
 
+                <!-- Column 4 -->
                 <div class="card column4">
                     <p class="footer-header"> Disclaimer </p>
                     <div class="footer-text">
@@ -369,6 +407,7 @@
         </div>
     </footer>
 
+    <!-- Script for the animation on scroll and fade-in -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
     <script src="code.js" type="text/Javascript"> </script>
 
