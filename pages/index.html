@@ -16,6 +16,7 @@
         type="text/css">
     <link rel="stylesheet" href="css/style-mobile.css" media="only screen and (max-device-width: 480px)"
         type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -37,7 +38,7 @@
 
     <main>
         <div class="song-title">
-            <img src="images/Cool With You logo.png" class="title-logo" alt="Cool With You">
+            <img data-aos="fade-down" data-aos-duration=500 src="images/Cool With You logo.png" class="title-logo" alt="Cool With You">
         </div>
 
         <section class="subtitle-container">
@@ -53,7 +54,7 @@
             <div class="poster-full">
 
                 <div class="poster-top">
-                    <p> <span id="you"> YOU </span> <br> know me like <br> no other. </p>
+                    <p data-aos="fade-up-right" data-aos-duration=5000 > <span id="you"> YOU </span> <br> know me like <br> no other. </p>
 
                     <div id="dia1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="76" height="90" viewBox="0 0 76 90" fill="none">
@@ -83,13 +84,13 @@
 
                 <div class="poster-hyein-behind">
                     <div class="poster-behind-left">
-                        <img src="images/hyein-poster-bg.png" alt="Fancy Background">
-                        <p> 이<br>혜<br>인 </p>
+                        <img data-aos="fade-up-right" data-aos-delay=5000 data-aos-duration=1000 src="images/hyein-poster-bg.png" alt="Fancy Background">
+                        <p data-aos="fade-up-right" data-aos-delay=6000 data-aos-duration=5000> 이<br>혜<br>인 </p>
                         <div id="rectangle"> </div>
                     </div>
 
                     <div class="poster-behind-right"> <!-- lyrics -->
-                        <div class="stanza">
+                        <div data-aos="fade-left" data-aos-delay=6000 class="stanza">
                             <p> 다 표현하지 않아도 </p>
                             <p> See me like no other </p> <br>
                             <p> And I think </p>
@@ -109,13 +110,13 @@
                 </div>
 
                 <div class="poster-below">
-                    <p> <span id="dreaming"> DREAMING </span> <br> OF <br> EACH OTHER </p>
+                    <p data-aos="zoom-out-down"> <span id="dreaming"> DREAMING </span> <br> OF <br> EACH OTHER </p>
                 </div>
 
             </div>
         </section>
 
-        <section class="bottom-desc">
+        <section data-aos="zoom-in" class="bottom-desc">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="49" viewBox="0 0 38 49" fill="none">
                 <path
                     d="M18.6822 0.105469L25.6747 15.3608L37.3405 24.5049L25.6747 33.6489L18.6822 48.9043L11.6896 33.6489L0.0238037 24.5049L11.6896 15.3608L18.6822 0.105469Z"
@@ -129,12 +130,12 @@
 
         <section class="streaming-container">
             <div class="stream-top">
-                <div class="nj-image">
+                <div data-aos="fade-right" class="nj-image">
                     <img src="images/pic1.jpg" alt="Picture of NewJeans">
                     <div class="title"> cool with you </div>
                 </div>
 
-                <div class="sites">
+                <div data-aos="fade-left" class="sites">
                     <div class="stream-header"> Stream Here </div>
                     <div class="sites-container">
                         <a href="https://www.deezer.com/en/artist/178008437"> <img src="images/stream-logos/deezer.png" class="stream-logos" alt="Deezer"> </a>
@@ -148,7 +149,7 @@
             </div>
         </section>
 
-        <section class="video-analysis" id="song">
+        <section data-aos="fade-down" class="video-analysis" id="song">
             <p class="analysis-header"> Video and Song Analysis </p>
             <img src="images/pic3.png" class="analysis-bg" alt="Background Again">
         </section>
@@ -156,9 +157,9 @@
         <img src="images/groupbg.png" class="line-bg" alt="Line Design"> 
 
         <section class="storytelling">
-            <h1> EROS AND PSYCHE </h1>
+            <h1 data-aos="fade-down-right" data-aos-duration="5000"> EROS AND PSYCHE </h1>
 
-			<div id="first" class="parallax"> 
+			<div data-aos="flip-left" id="first" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/first.png" class="bg" alt="Parallax 1">
                 </div>
@@ -170,7 +171,7 @@
                 </div>
             </div>
 
-            <div id="second" class="parallax"> 
+            <div data-aos="flip-right" id="second" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/second.png" class="bg" alt="Parallax 2">
                 </div>
@@ -181,7 +182,7 @@
                 </div>
             </div>
 
-            <div id="third" class="parallax"> 
+            <div data-aos="flip-left" id="third" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/third.png" class="bg" alt="Parallax 3">
                 </div>
@@ -192,7 +193,7 @@
                 </div>
             </div>
 
-            <div id="fourth" class="parallax"> 
+            <div data-aos="flip-right" id="fourth" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/fourth.png" class="bg" alt="Parallax 4">
                 </div>
@@ -203,7 +204,7 @@
                 </div>
             </div>
 
-            <div id="fifth" class="parallax"> 
+            <div data-aos="flip-left" id="fifth" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/fifth.png" class="bg" alt="Parallax 5">
                 </div>
@@ -214,7 +215,7 @@
                 </div>
             </div>
 
-            <div id="sixth" class="parallax"> 
+            <div data-aos="flip-right" id="sixth" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/sixth.png" class="bg" alt="Parallax 6">
                 </div>
@@ -225,7 +226,7 @@
                 </div>
             </div>
 
-            <div id="seventh" class="parallax"> 
+            <div data-aos="flip-left" id="seventh" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/seventh.png" class="bg" alt="Parallax 7">
                 </div>
@@ -236,7 +237,7 @@
                 </div>
             </div>
 
-            <div id="eighth" class="parallax"> 
+            <div data-aos="flip-right" id="eighth" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/eighth.png" class="bg" alt="Parallax 8">
                 </div>
@@ -247,7 +248,7 @@
                 </div>
             </div>
 
-            <div id="ninth" class="parallax"> 
+            <div data-aos="flip-up" id="ninth" class="parallax"> 
                 <div class="parallax-pic"> 
                     <img src="images/parallax/ninth.png" class="bg" alt="Parallax 9">
                 </div>
@@ -259,16 +260,16 @@
             </div>
 		</section>
 
-        <section class="artist" id="artist">
+        <section  data-aos="fade-down-right" class="artist" id="artist">
             <p class="artist-header"> Artist </p>
 
-            <div class="perf-video"> <iframe width="870" height="489" src="https://www.youtube.com/embed/kKsivrgoyDw?si=RW2GGBaJmZjJ4rxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div data-aos="zoom-in-down" class="perf-video"> <iframe referrerpolicy="no-referrer-when-downgrade" width="870" height="489" src="https://www.youtube.com/embed/kKsivrgoyDw?si=RW2GGBaJmZjJ4rxK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <p class="artist-name1"> NewJeans </p>
             <p class="artist-name2"> NewJeans </p>
             
-            <div class="NWJNS"> 
+            <div data-aos="fade-down" class="NWJNS"> 
                 <div class="members" id="Hyein">
                     <img src="images/member-images/hyein.jpg" class="mem-pic" alt="Hyein"> 
                     <p> <a href="#"> Hyein </a> </p>
@@ -296,7 +297,7 @@
             </div>
         </section>
 
-        <section class="bottom-desc">
+        <section data-aos="zoom-in" class="bottom-desc">
             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="49" viewBox="0 0 38 49" fill="none">
                 <path
                     d="M18.6822 0.105469L25.6747 15.3608L37.3405 24.5049L25.6747 33.6489L18.6822 48.9043L11.6896 33.6489L0.0238037 24.5049L11.6896 15.3608L18.6822 0.105469Z"
@@ -368,7 +369,11 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/code.js"> </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+    <script> 
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
