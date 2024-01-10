@@ -1,1 +1,551 @@
-/*# sourceMappingURL=style-tablet.css.map */
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Beausite", sans-serif;
+  background-color: #141010;
+  color: #DDD3D1;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.ador-logo {
+  margin-top: 4.294vw;
+  height: 4.58vw;
+}
+
+nav {
+  transform: rotate(-90deg);
+}
+nav li {
+  font-size: 1.527vw;
+  text-align: right;
+  list-style-type: none;
+  margin-bottom: 1.431vw;
+  letter-spacing: 0.477vw;
+}
+nav a {
+  color: #DDD3D1;
+}
+
+li.active {
+  border: 0.191vw solid #DDD3D1;
+  padding: 0.954vw;
+  margin-bottom: 1.431vw;
+}
+li.active a:hover {
+  color: white;
+}
+
+a:hover {
+  color: #744874;
+}
+
+/* Title */
+.song-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.771vw;
+  margin-bottom: 5.725vw;
+}
+.song-title .title-logo {
+  width: 58.874vw;
+}
+
+/* Footer */
+footer {
+  box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
+  -webkit-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
+  -moz-box-shadow: 2px -57px 54px 18px rgba(116, 72, 116, 0.75);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 3.817vw auto;
+}
+.card-container a {
+  color: #744874;
+}
+.card-container .footer-header {
+  font-size: 2.863vw;
+  font-family: "Beausite", sans-serif;
+  font-weight: bold;
+  width: 25.286vw;
+  margin-bottom: 1.908vw;
+}
+.card-container .footer-text {
+  font-size: 2.385vw;
+  font-family: "DM Serif Text", serif;
+}
+.card-container .card {
+  margin: 0 auto;
+  width: 15%;
+}
+.card-container .card.column1 #NJ-name {
+  font-family: "Suerte";
+}
+.card-container .card.column1 .connect-socmed {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+.card-container .card.column1 .socmed-logos {
+  width: 4.771vw;
+  filter: brightness(0) invert(1);
+}
+.card-container .card.column4 .footer-text {
+  color: white;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #DDD3D1;
+}
+.footer-copyright .copyright-text {
+  margin: 1.908vw;
+  font-family: "DM Serif Text", serif;
+  font-size: 1.718vw;
+  color: white;
+}
+
+/* ┌──────────────────┐
+       PART 1: HOME
+   └──────────────────┘ */
+/* Main: Subtitle */
+.subtitle-container .subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.863vw;
+  color: white;
+}
+.subtitle-container .subtitle #subtitle-date {
+  position: absolute;
+  margin-right: 31.489vw;
+  font-family: "Beausite", sans-serif;
+  letter-spacing: 2.004vw;
+  font-size: 2.767vw;
+}
+.subtitle-container .subtitle #subtitle-artist {
+  position: absolute;
+  margin-top: 6.679vw;
+  margin-right: 33.397vw;
+  font-family: "Suerte";
+  font-size: 4.485vw;
+}
+
+/* Main: Poster Top */
+.poster-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-top p {
+  position: absolute;
+  margin-top: 47.71vw;
+  margin-right: 37.214vw;
+  text-align: left;
+  font-family: "DM Serif Text", serif;
+  font-size: 3.34vw;
+}
+.poster-top #you {
+  line-height: 14.313vw;
+  font-size: 13.359vw;
+}
+.poster-top #dia1 {
+  position: absolute;
+  width: 7.252vw;
+  margin-left: 70.611vw;
+  margin-top: 28.626vw;
+}
+.poster-top #dia2 {
+  position: absolute;
+  width: 3.912vw;
+  margin-left: 78.244vw;
+  margin-top: 38.168vw;
+}
+
+/* Main: Poster Sides */
+.sides {
+  background-image: url(bg-images/hyein-poster-sides.png);
+  width: 38.168vw;
+  height: 62.977vw;
+  position: absolute;
+  margin-top: 40vw;
+  z-index: -1;
+  right: 95%;
+}
+
+.sides:nth-child(2) {
+  left: 95%;
+}
+
+/* Main: Poster Hyein */
+.poster-hyein {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-hyein img {
+  position: absolute;
+  width: 76.336vw;
+  top: 66.794vw;
+  z-index: 2;
+}
+
+/* Main: Behind Poster Hyein */
+.poster-hyein-behind {
+  display: flex;
+  flex-direction: column;
+}
+.poster-hyein-behind .poster-behind-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-hyein-behind .poster-behind-left img {
+  position: absolute;
+  top: 86.355vw;
+  width: 28.34vw;
+  margin-right: 33.397vw;
+  z-index: 1;
+}
+.poster-hyein-behind .poster-behind-left p {
+  position: absolute;
+  line-height: 17.176vw;
+  color: rgba(0, 0, 0, 0.2470588235);
+  margin-top: 128.817vw;
+  margin-right: 23.855vw;
+  font-family: "Do Hyeon";
+  font-size: 17.176vw;
+  z-index: 1;
+}
+.poster-hyein-behind .poster-behind-left #rectangle {
+  position: absolute;
+  z-index: 2;
+  margin-top: 222.328vw;
+  margin-right: 33.397vw;
+  width: 28.34vw;
+  height: 3.817vw;
+  background: #744874;
+}
+.poster-hyein-behind .poster-behind-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-hyein-behind .stanza {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  width: 23.855vw;
+  margin-top: 145.992vw;
+  margin-left: 41.031vw;
+  text-align: right;
+  font-size: 3.244vw;
+  margin-bottom: 4.771vw;
+  /** TEXT GRADIENT */
+  color: #141010;
+  background-image: -webkit-linear-gradient(10deg, rgba(20, 16, 16, 0.5294117647) 50%, #DDD3D1 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.poster-hyein-behind .poster-behind-rec {
+  position: absolute;
+  margin-left: 23.855vw;
+  margin-top: 138.359vw;
+  width: 49.618vw;
+  height: 95.42vw;
+  border: 0.191vw solid #DDD3D1;
+  z-index: -1;
+}
+
+/* Main: Poster Below */
+.poster-below {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin: 119.275vw 23.855vw 0 18.626vw;
+  width: 70vw;
+}
+.poster-below p {
+  text-align: right;
+  font-family: "DM Serif Text", serif;
+  margin-bottom: 2.863vw;
+  font-style: italic;
+  font-size: 6.679vw;
+  letter-spacing: 0.668vw;
+}
+.poster-below #dreaming {
+  font-style: normal;
+  font-size: 14.313vw;
+  letter-spacing: 0px;
+}
+
+/* Main: Description */
+.bottom-desc {
+  margin-bottom: 28.626vw;
+}
+.bottom-desc h1 {
+  font-size: 3.435vw;
+  font-style: italic;
+  text-align: center;
+  margin: 4.771vw auto;
+}
+.bottom-desc p {
+  color: white;
+  max-width: 76.336vw;
+  margin: 0 auto;
+  font-size: 3.053vw;
+  font-family: "DM Serif Text", serif;
+  text-align: center;
+}
+.bottom-desc svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 9.542vw auto 0;
+}
+
+/* ┌──────────────────┐
+       PART 2: SONG
+   └──────────────────┘ */
+.streaming-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28.626vw;
+  height: 95.42vw;
+  background-image: url(bg-images/pic2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  filter: blur;
+}
+.streaming-container .stream-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.streaming-container .stream-top .nj-image {
+  position: relative;
+  filter: drop-shadow(2px 11px 4px #DDD3D1);
+}
+.streaming-container .stream-top .nj-image img {
+  width: 49.618vw;
+  margin-left: 9.542vw;
+  transition: all 1s ease;
+}
+.streaming-container .stream-top .nj-image img:hover {
+  width: 59.16vw;
+  margin-left: 19.084vw;
+  transition: all 1s ease;
+}
+.streaming-container .stream-top .nj-image .title {
+  position: absolute;
+  bottom: 3.817vw;
+  left: 29.58vw;
+  max-width: 25.763vw;
+  text-align: right;
+  color: #141010;
+  font-family: "DM Serif Text", serif;
+  font-size: 6.679vw;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #141010;
+  -webkit-text-fill-color: #DDD3D1;
+}
+.streaming-container .stream-top .sites .stream-header {
+  margin-left: 10.496vw;
+  max-width: 55.344vw;
+  color: #DDD3D1;
+  font-family: "Gioviale";
+  font-size: 14.313vw;
+  line-height: 16.221vw;
+}
+.streaming-container .stream-top .sites .sites-container {
+  margin: 0 auto;
+  max-width: 50%;
+}
+.streaming-container .stream-top .sites .sites-container .stream-logos {
+  margin: 0.477vw;
+  width: 11.45vw;
+  filter: brightness(0) invert(1);
+}
+
+.line-bg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 400.763vw;
+}
+
+.video-analysis {
+  position: relative;
+}
+.video-analysis .analysis-header {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: right;
+  color: #DDD3D1;
+  font-family: "Gioviale";
+  font-size: 14.313vw;
+  line-height: 14.313vw;
+}
+.video-analysis .analysis-bg {
+  margin: 19.084vw auto;
+  display: block;
+  width: 66.794vw;
+}
+
+.storytelling h1 {
+  font-size: 4.771vw;
+  text-align: center;
+  margin-bottom: 4.771vw;
+}
+.storytelling .parallax {
+  filter: drop-shadow(1px 1px 7px #DDD3D1);
+  position: relative;
+  width: 100%;
+  height: 39.122vw;
+  overflow: hidden;
+  margin-bottom: 9.542vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.storytelling .parallax .parallax-pic img {
+  top: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.storytelling .parallax .parallax-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 23.855vw;
+  max-width: 66.794vw;
+  text-shadow: 2px 2px 5px #141010;
+}
+.storytelling .parallax .parallax-text h2 {
+  color: #744874;
+  font-family: "Beausite", sans-serif;
+  font-size: 2.863vw;
+  font-style: italic;
+}
+.storytelling .parallax .parallax-text p {
+  color: white;
+  font-size: 1.908vw;
+  font-family: "DM Serif Text", serif;
+}
+.storytelling .parallax .parallax-text .white {
+  color: #DDD3D1;
+}
+
+.scroll {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.scroll--show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* ┌──────────────────┐
+       PART 3: ARTIST
+   └──────────────────┘ */
+.artist .artist-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DDD3D1;
+  font-family: "Gioviale";
+  font-size: 14.313vw;
+  margin-top: 19.084vw;
+}
+.artist .perf-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artist .artist-name1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Suerte Outline";
+  font-size: 9.542vw;
+}
+.artist .artist-name2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Suerte";
+  font-size: 8.588vw;
+}
+.artist .NWJNS {
+  margin-top: 14.313vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.artist .NWJNS .members {
+  width: 30.057vw;
+  height: 30.057vw;
+  margin: 1.908vw;
+  background-color: #DDD3D1;
+}
+.artist .NWJNS .members .mem-pic {
+  display: block;
+  margin: 2.863vw auto 0.954vw;
+  width: 70%;
+}
+.artist .NWJNS .members p {
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  color: #744874;
+  font-size: 3.053vw;
+}
+.artist .NWJNS .members:hover {
+  animation: jelly 0.5s;
+  filter: brightness(1.2);
+}
+
+/* Animation */
+/* JELLY BOUNCE */
+@keyframes jelly {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}/*# sourceMappingURL=style-tablet.css.map */

@@ -34,24 +34,23 @@ body {
 .header-container {
     display: flex;
     justify-content: space-between;
-    width: 1350px;
     margin: auto;
 }
 
 .ador-logo {
-    margin-top: 45px;
-    height: 48px;
+    margin-top: 4.294vw;
+    height: 4.580vw;
 }
 
 nav {
     transform: rotate(-90deg);
 
     li {
-        font-size: 16px;
+        font-size: 1.527vw;
         text-align: right;
         list-style-type: none;
-        margin-bottom: 15px;
-        letter-spacing: 5px;
+        margin-bottom: 1.431vw;
+        letter-spacing: 0.477vw;
     }
 
     a {
@@ -60,9 +59,9 @@ nav {
 }
 
 li.active {
-    border: 2px solid $my-white;
-    padding: 10px;
-    margin-bottom: 15px;
+    border: 0.191vw solid $my-white;
+    padding: 0.954vw;
+    margin-bottom: 1.431vw;
 
     a:hover {
         color: white;
@@ -76,11 +75,11 @@ a:hover {
 /* Title */
 .song-title {
     @include to-center();
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 4.771vw;
+    margin-bottom: 5.725vw;
 
     .title-logo {
-        width: 617px;
+        width: 58.874vw;
     }
 }
 
@@ -94,22 +93,22 @@ footer {
 .card-container {
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 3.817vw auto;
 
     a {
         color: $color-accent;
     }
 
     .footer-header {
-        font-size: 30px;
+        font-size: 2.863vw;
         font-family: $my-sans;
         font-weight: bold;
-        width: 265px;
-        margin-bottom: 20px;
+        width: 25.286vw;
+        margin-bottom: 1.908vw;
     }
 
     .footer-text {
-        font-size: 25px;
+        font-size: 2.385vw;
         font-family: $my-serif;
     }
 
@@ -130,7 +129,7 @@ footer {
         }
 
         .socmed-logos {
-            width: 50px;
+            width: 4.771vw;
             filter: brightness(0) invert(1);
         }
     }
@@ -148,9 +147,9 @@ footer {
     border-top: 1px solid $my-white;
 
     .copyright-text {
-        margin: 20px;
+        margin: 1.908vw;
         font-family: $my-serif;
-        font-size: 18px;
+        font-size: 1.718vw;
         color: white;
     }
 }
@@ -163,23 +162,23 @@ footer {
 .subtitle-container {
     .subtitle {
         @include to-center();
-        margin-top: 30px;
+        margin-top: 2.863vw;
         color: white;
 
         #subtitle-date {
             position: absolute;
-            margin-right: 330px;
+            margin-right: 31.489vw;
             font-family: $my-sans;
-            letter-spacing: 21px;
-            font-size: 29px;
+            letter-spacing: 2.004vw;
+            font-size: 2.767vw;
         }
 
         #subtitle-artist {
             position: absolute;
-            margin-top: 70px;
-            margin-right: 350px;
+            margin-top: 6.679vw;
+            margin-right: 33.397vw;
             font-family: "Suerte";
-            font-size: 47px;
+            font-size: 4.485vw;
         }
     }
 }
@@ -190,29 +189,31 @@ footer {
 
     p {
         position: absolute;
-        margin-top: 500px;
-        margin-right: 390px;
+        margin-top: 47.710vw;
+        margin-right: 37.214vw;
         text-align: left;
 
         font-family: $my-serif;
-        font-size: 35px;
+        font-size: 3.340vw;
     }
 
     #you {
-        line-height: 150px;
-        font-size: 140px;
+        line-height: 14.313vw;
+        font-size: 13.359vw;
     }
 
     #dia1 {
         position: absolute;
-        margin-left: 740px;
-        margin-top: 300px;
+        width: 7.252vw;
+        margin-left: 70.611vw;
+        margin-top: 28.626vw;
     }
 
     #dia2 {
         position: absolute;
-        margin-left: 820px;
-        margin-top: 400px;
+        width: 3.912vw;
+        margin-left: 78.244vw;
+        margin-top: 38.168vw;
     }
 }
 
@@ -220,10 +221,10 @@ footer {
 /* Main: Poster Sides */
 .sides {
     background-image: url(bg-images/hyein-poster-sides.png);
-    width: 400px;
-    height: 660px;
+    width: 38.168vw;
+    height: 62.977vw;
     position: absolute;
-    top: 1030px;
+    margin-top: 40vw;
     z-index: -1;
     right: 95%;
 }
@@ -238,8 +239,8 @@ footer {
 
     img {
         position: absolute;
-        width: 800px;
-        top: 700px;
+        width: 76.336vw;
+        top: 66.794vw;
         z-index: 2;
     }
 }
@@ -254,29 +255,30 @@ footer {
 
         img {
             position: absolute;
-            top: 905px;
-            margin-right: 350px;
+            top: 86.355vw;
+            width: 28.340vw;
+            margin-right: 33.397vw;
             z-index: 1;
         }
 
         p {
             position: absolute;
-            line-height: 180px;
+            line-height: 17.176vw;
             color: #0000003f;
-            margin-top: 1350px;
-            margin-right: 250px;
+            margin-top: 128.817vw;
+            margin-right: 23.855vw;
             font-family: "Do Hyeon";
-            font-size: 180px;
+            font-size: 17.176vw;
             z-index: 1;
         }
 
         #rectangle {
             position: absolute;
             z-index: 2;
-            margin-top: 2330px;
-            margin-right: 350px;
-            width: 297px;
-            height: 40px;
+            margin-top: 222.328vw;
+            margin-right: 33.397vw;
+            width: 28.340vw;
+            height: 3.817vw;
             background: $color-accent;
         }
     }
@@ -290,12 +292,12 @@ footer {
         z-index: 0;
         display: flex;
         flex-direction: column;
-        width: 250px;
-        margin-top: 1530px;
-        margin-left: 430px;
+        width: 23.855vw;
+        margin-top: 145.992vw;
+        margin-left: 41.031vw;
         text-align: right;
-        font-size: 34px;
-        margin-bottom: 50px;
+        font-size: 3.244vw;
+        margin-bottom: 4.771vw;
 
         /** TEXT GRADIENT */
         color: $my-black;
@@ -307,11 +309,11 @@ footer {
 
     .poster-behind-rec {
         position: absolute;
-        margin-left: 250px;
-        margin-top: 1450px;
-        width: 520px;
-        height: 1000px;
-        border: 2px solid $my-white;
+        margin-left: 23.855vw;
+        margin-top: 138.359vw;
+        width: 49.618vw;
+        height: 95.420vw;
+        border: 0.191vw solid $my-white;
         z-index: -1
     }
 }
@@ -321,47 +323,48 @@ footer {
     @include to-center();
     position: relative;
     z-index: 2;
-    margin: 1250px 250px 0 300px;
+    margin: 119.275vw 23.855vw 0 18.626vw;
+    width: 70vw;
 
     p {
         text-align: right;
         font-family: $my-serif;
-        margin-bottom: 30px;
+        margin-bottom: 2.863vw;
         font-style: italic;
-        font-size: 70px;
-        letter-spacing: 7px;
+        font-size: 6.679vw;
+        letter-spacing: 0.668vw;
     }
 
     #dreaming {
         font-style: normal;
-        font-size: 150px;
+        font-size: 14.313vw;
         letter-spacing: 0px;
     }
 }
 
 /* Main: Description */
 .bottom-desc {
-    margin-bottom: 300px;
+    margin-bottom: 28.626vw;
 
     h1 {
-        font-size: 36px;
+        font-size: 3.435vw;
         font-style: italic;
         text-align: center;
-        margin: 50px auto;
+        margin: 4.771vw auto;
     }
 
     p {
         color: white;
-        max-width: 800px;
+        max-width: 76.336vw;
         margin: 0 auto;
-        font-size: 32px;
+        font-size: 3.053vw;
         font-family: $my-serif;
         text-align: center;
     }
 
     svg {
         @include to-center();
-        margin: 100px auto 0;
+        margin: 9.542vw auto 0;
     }
 }
 
@@ -373,8 +376,8 @@ footer {
 
 .streaming-container {
     @include to-center();
-    margin-bottom: 300px;
-    height: 1000px;
+    margin-bottom: 28.626vw;
+    height: 95.420vw;
     background-image: url(bg-images/pic2.jpg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -389,8 +392,8 @@ footer {
             filter: drop-shadow(2px 11px 4px $my-white);
 
             img {
-                width: 520px;
-                margin-left: 100px;
+                width: 49.618vw;
+                margin-left: 9.542vw;
 
                 -webkit-transition: all 1s ease;
                 -moz-transition: all 1s ease;
@@ -400,8 +403,8 @@ footer {
             }
 
             img:hover {
-                width: 620px;
-                margin-left: 200px;
+                width: 59.160vw;
+                margin-left: 19.084vw;
                 
                 -webkit-transition: all 1s ease;
                 -moz-transition: all 1s ease;
@@ -412,13 +415,13 @@ footer {
 
             .title {
                 position: absolute;
-                bottom: 40px;
-                left: 310px;
-                max-width: 270px;
+                bottom: 3.817vw;
+                left: 27.580vw;
+                max-width: 25.763vw;
                 text-align: right;
                 color: $my-black;
                 font-family: $my-serif;
-                font-size: 70px;
+                font-size: 6.679vw;
                 -webkit-text-stroke-width: 1.5px;
                 -webkit-text-stroke-color: $my-black;
                 -webkit-text-fill-color: $my-white;
@@ -427,12 +430,12 @@ footer {
 
         .sites {
             .stream-header {
-                margin-left: 110px;
-                max-width: 580px;
+                margin-left: 10.496vw;
+                max-width: 55.344vw;
                 color: $my-white;
                 font-family: "Gioviale";
-                font-size: 150px;
-                line-height: 170px;
+                font-size: 14.313vw;
+                line-height: 16.221vw;
 
             }
 
@@ -441,8 +444,8 @@ footer {
                 max-width: 50%;
 
                 .stream-logos {
-                    margin: 5px;
-                    width: 120px;
+                    margin: 0.477vw;
+                    width: 11.450vw;
                     filter: brightness(0) invert(1);
                 }
             }
@@ -452,7 +455,7 @@ footer {
 
 .line-bg {
     @include center-absolute();
-    top: 4200px;
+    top: 400.763vw;
 }
 
 .video-analysis {
@@ -463,31 +466,31 @@ footer {
         text-align: right;
         color: $my-white;
         font-family: "Gioviale";
-        font-size: 150px;
-        line-height: 150px;
+        font-size: 14.313vw;
+        line-height: 14.313vw;
     }
 
     .analysis-bg {
-        margin: 200px auto;
+        margin: 19.084vw auto;
         display: block;
-        width: 700px;
+        width: 66.794vw;
     }
 }
 
 .storytelling {
     h1 {
-        font-size: 50px;
+        font-size: 4.771vw;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 4.771vw;
     }
 
     .parallax {
         filter: drop-shadow(1px 1px 7px $my-white);
         position: relative;
         width: 100%;
-        height: 410px;
+        height: 39.122vw;
         overflow: hidden;
-        margin-bottom: 100px;
+        margin-bottom: 9.542vw;
         @include to-center();
 
         .parallax-pic {
@@ -500,20 +503,20 @@ footer {
         .parallax-text {
             @include center-absolute();
 
-            top: 250px;
-            max-width: 700px;
+            top: 23.855vw;
+            max-width: 66.794vw;
             text-shadow: 2px 2px 5px $my-black;
 
             h2 {
                 color: $color-accent;
                 font-family: $my-sans;
-                font-size: 30px;
+                font-size: 2.863vw;
                 font-style: italic;
             }
 
             p {
                 color: white;
-                font-size: 20px;
+                font-size: 1.908vw;
                 font-family: $my-serif;
             }
 
@@ -544,8 +547,8 @@ footer {
         @include to-center;
         color: $my-white;
         font-family: "Gioviale";
-        font-size: 150px;
-        margin-top: 200px;
+        font-size: 14.313vw;
+        margin-top: 19.084vw;
     }
 
     .perf-video {
@@ -555,30 +558,30 @@ footer {
     .artist-name1 {
         @include center-absolute();
         font-family: "Suerte Outline";
-        font-size: 100px;
+        font-size: 9.542vw;
     }
 
     .artist-name2 {
         @include center-absolute();
         font-family: "Suerte";
-        font-size: 90px;
+        font-size: 8.588vw;
     }
 
     .NWJNS {
-        margin-top: 150px;
+        margin-top: 14.313vw;
         @include to-center;
         flex-wrap: wrap;
 
 
         .members {
-            width: 315px;
-            height: 315px;
-            margin: 20px;
+            width: 30.057vw;
+            height: 30.057vw;
+            margin: 1.908vw;
             background-color: $my-white;
 
             .mem-pic {
                 display: block;
-                margin: 30px auto 10px;
+                margin: 2.863vw auto 0.954vw;
                 width: 70%;
             }
 
@@ -586,7 +589,7 @@ footer {
                 text-align: center;
                 font-family: $my-serif;
                 color: $color-accent;
-                font-size: 32px;
+                font-size: 3.053vw;
             }
         }
 
@@ -615,4 +618,3 @@ footer {
       transform: scale(0.95, 1.05);
     }
   }
-

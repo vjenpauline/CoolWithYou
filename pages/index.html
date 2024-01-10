@@ -16,7 +16,8 @@
         type="text/css">
     <link rel="stylesheet" href="css/style-mobile.css" media="only screen and (max-device-width: 480px)"
         type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
 </head>
 
@@ -32,7 +33,6 @@
                     <li> <a href="#artist"> ARTIST </a> </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -43,8 +43,8 @@
 
         <section class="subtitle-container">
             <div class="subtitle">
-                <p class="subtitle-date"> 19/7/2023 </p>
-                <p class="subtitle-artist"> NewJeans </p>
+                <p class="scroll" id="subtitle-date"> 19/7/2023 </p>
+                <p class="scroll" id="subtitle-artist"> NewJeans </p>
             </div>
         </section>
 
@@ -57,7 +57,7 @@
                     <p data-aos="fade-up-right" data-aos-duration=5000 > <span id="you"> YOU </span> <br> know me like <br> no other. </p>
 
                     <div id="dia1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="76" height="90" viewBox="0 0 76 90" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 90" fill="none">
                             <path
                                 d="M38.0257 0.780762L52.0108 28.5993L75.3424 45.2738L52.0108 61.9483L38.0257 89.7668L24.0406 61.9483L0.708984 45.2738L24.0406 28.5993L38.0257 0.780762Z"
                                 fill="white" />
@@ -65,7 +65,7 @@
                     </div>
 
                     <div id="dia2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="50" viewBox="0 0 41 50" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 50" fill="none">
                             <path
                                 d="M20.1771 0.284668L27.7075 15.54L40.2707 24.6841L27.7075 33.8281L20.1771 49.0835L12.6467 33.8281L0.0834961 24.6841L12.6467 15.54L20.1771 0.284668Z"
                                 fill="#8C4A8D" />
@@ -271,28 +271,28 @@
             
             <div data-aos="fade-down" class="NWJNS"> 
                 <div class="members" id="Hyein">
-                    <img src="images/member-images/hyein.jpg" class="mem-pic" alt="Hyein"> 
-                    <p> <a href="#"> Hyein </a> </p>
+                    <a href="https://kprofiles.com/hyein-newjeans-profile/"> <img src="images/member-images/hyein.jpg" class="mem-pic" alt="Hyein"> 
+                    <p> Hyein </p> </a> 
                 </div>
 
                 <div class="members" id="Haerin"> 
-                    <img src="images/member-images/haerin.jpg" class="mem-pic" alt="Haerin">
-                    <p> <a href="#"> Haerin </a> </p>
+                    <a href="https://kprofiles.com/haerin-newjeans-profile/"> <img src="images/member-images/haerin.jpg" class="mem-pic" alt="Haerin">
+                    <p> Haerin </p> </a>
                 </div>
 
                 <div class="members" id="Hanni"> 
-                    <img src="images/member-images/hanni.jpg" class="mem-pic" alt="Hanni">
-                    <p> <a href="#"> Hanni </a> </p>
+                    <a href="https://kprofiles.com/hanni-newjeans-profile/"> <img src="images/member-images/hanni.jpg" class="mem-pic" alt="Hanni">
+                    <p> Hanni </p> </a>
                 </div>
 
                 <div class="members" id="Danielle"> 
-                    <img src="images/member-images/danielle.jpg" class="mem-pic" alt="Danielle">
-                    <p> <a href="#"> Danielle </a> </p>
+                    <a href="https://kprofiles.com/danielle-newjeans-profile-facts/"> <img src="images/member-images/danielle.jpg" class="mem-pic" alt="Danielle">
+                    <p> Danielle </p> </a>
                 </div>
 
                 <div class="members" id="Minji"> 
-                    <img src="images/member-images/minji.jpg" class="mem-pic" alt="Minji">
-                    <p> <a href="#"> Minji </a> </p>
+                    <a href="https://kprofiles.com/minji-newjeans-profile/"> <img src="images/member-images/minji.jpg" class="mem-pic" alt="Minji">
+                    <p> Minji </p> </a> 
                 </div>
             </div>
         </section>
@@ -311,7 +311,7 @@
 
     </main>
 
-    <footer>
+    <footer class="scroll">
         <div class="footer-card">
             <div class="card-container">
                 <div class="card column1">
@@ -370,9 +370,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
-    <script> 
-        AOS.init();
-    </script>
+    <script src="code.js" type="text/Javascript"> </script>
 
 </body>
 
