@@ -7,7 +7,7 @@ document.onscroll = function() { // creates fade in scroll function
   var position = scroll.getBoundingClientRect();
   var height = position.top;
   
-  if(height < 300) { 
+  if(height < 2000) { 
     scroll.classList.add('scroll--show');
   }
  });
